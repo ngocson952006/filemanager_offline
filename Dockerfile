@@ -22,5 +22,6 @@ RUN docker-php-ext-install \
 WORKDIR /var/www/html
 
 COPY tinyfilemanager.php index.php
+ADD assets assets
 
 CMD ["sh", "-c", "php -S 0.0.0.0:80"]
